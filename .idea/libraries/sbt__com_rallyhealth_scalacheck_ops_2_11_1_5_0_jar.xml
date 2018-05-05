@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.rallyhealth:scalacheck-ops_2.11:1.5.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.rallyhealth/scalacheck-ops_2.11/jars/scalacheck-ops_2.11-1.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.rallyhealth/scalacheck-ops_2.11/srcs/scalacheck-ops_2.11-1.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

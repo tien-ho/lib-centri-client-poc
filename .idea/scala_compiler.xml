@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="lib-centri-client-poc" />
+    <profile name="sbt 2" modules="lib-optum-mempe-play25">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-deprecation:false" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-Xlint" />
+      </parameters>
+    </profile>
+  </component>
+</project>
