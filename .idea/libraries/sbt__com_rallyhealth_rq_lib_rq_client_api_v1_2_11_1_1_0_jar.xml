@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.rallyhealth.rq:lib-rq-client-api-v1_2.11:1.1.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.rallyhealth.rq/lib-rq-client-api-v1_2.11/jars/lib-rq-client-api-v1_2.11-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.rallyhealth.rq/lib-rq-client-api-v1_2.11/srcs/lib-rq-client-api-v1_2.11-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
