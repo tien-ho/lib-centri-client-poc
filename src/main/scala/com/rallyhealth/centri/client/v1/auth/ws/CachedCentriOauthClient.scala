@@ -1,5 +1,7 @@
 package com.rallyhealth.centri.client.v1.auth.ws
 
+
+
 import com.rallyhealth.centri.client.v1.auth.OAuthClient
 import com.rallyhealth.centri.client.v1.auth.model.{CentriAccessTokenResponse, CentriOAuthException}
 import play.api.cache._
@@ -15,6 +17,7 @@ import scala.language.postfixOps
   * @param underlying [[OAuthClient]] that finds [[CentriAccessTokenResponse]]
   */
 class CachedCentriOauthClient(
+
                               underlying: OAuthClient,
                               cache: CacheApi
                             )(implicit ec: ExecutionContext) extends OAuthClient {
@@ -38,5 +41,6 @@ class CachedCentriOauthClient(
       }
     }
   }
+
 
 }

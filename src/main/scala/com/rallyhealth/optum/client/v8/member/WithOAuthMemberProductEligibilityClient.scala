@@ -37,4 +37,11 @@ trait WithOAuthMemberProductEligibilityClient {
     request: MemberProductEligibilityRequest,
     correlationId: Option[String]
   )(implicit ec: ExecutionContext): Future[Either[BaseOptumResponseError, OptumResponseSuccess]]
+
+
+
+
+
+
+
 }

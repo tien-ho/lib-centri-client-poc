@@ -13,9 +13,10 @@ import com.rallyhealth.centri.client.v1.common._
 import com.rallyhealth.centri.client.v1.common.model.{BaseCentriResponseError, CentriResponseAppError, CentriResponseError, CentriResponseSuccess}
 import com.rallyhealth.centri.client.v1.ihr.IhrClient
 import com.rallyhealth.centri.client.v1.ihr.config.IhrConfig
-import com.rallyhealth.centri.client.v1.ihr.model.{IhrHealthCheckRequest, IhrRequest}
-import com.rallyhealth.optum.client.v8.member.model.{RequestType, _}
-import com.rallyhealth.optum.client.v8.member.ws.MemPERequestBodyBuilder._
+import com.rallyhealth.centri.client.v1.ihr.model.{CentriIhrRequest, IhrHealthCheckRequest, RequestMetaData}
+import com.rallyhealth.centri.client.v1.ihr.model._
+import com.rallyhealth.centri.client.v1.ihr.ws.IhrRequestBodyBuilder._
+
 import com.rallyhealth.rq.v1.handler.HandledRqRequest
 import com.rallyhealth.rq.v1.handler.RqResponseHandlers.ResponseHandler
 import com.rallyhealth.rq.v1.{Rq, RqClient, RqRequest, RqResponse, _}
@@ -41,57 +42,34 @@ class WSIhrClient(ihrConfig: IhrConfig,
     * @param token OAuth2 Access token needed to call Optum generated using client_credentials.
     * @return Either [[BaseCentriResponseError]] or [[CentriResponseSuccess]]
     */
-  override def findCentriHealthCheck(request: IhrRequest
-                                           )(implicit token: Option[CentriAccessTokenResponse]): Future[Either[BaseCentriResponseError, CentriResponseSuccess]] = {
-    val wsReq = buildRequestWithHandler(request)
+  override def findIhrHealthCheck(request: CentriIhrRequest,
+                                  meta: RequestMetaData
+                                 )(implicit token: Option[CentriAccessTokenResponse]): Future[Either[BaseCentriResponseError, CentriResponseSuccess]] = {
+    val wsReq = buildRequestWithHandler(request, meta)
     wsClient.execute(wsReq)
   }
 
 
-
-
-
-  def buildRequestWithHandler(
-                               request: IhrRequest,
+  def buildRequestWithHandler(request: CentriIhrRequest,
+                              meta: RequestMetaData
                              )(implicit token: Option[CentriAccessTokenResponse]): HandledRqRequest[Either[BaseCentriResponseError, CentriResponseSuccess]] = {
     request match {
       case req: IhrHealthCheckRequest =>
         val requestBody: String = neoEncryptionService match {
           case Some(encryptionService) =>
-            encryptPayload(healthCheckRequestBody(req), encryptionService)
+            encryptPayload(healthCheckRequestBody(req, meta), encryptionService)
           case _ =>
-            personIdRequestBody(req)
+            healthCheckRequestBody(req, meta)
         }
         logRequest(requestBody)
         buildBaseRequest(meta.correlationId)
           .withBody(requestBody)
-          .withHandler(responseHandler(request, Some(meta), request.requestType, meta.searchType.reqString))
-      case req: PersonIdContractNumberMemPERequest =>
-        val requestBody: String = neoEncryptionService match {
-          case Some(encryptionService) =>
-            encryptPayload(personIdContractNumberRequestBody(meta, req), encryptionService)
-          case _ =>
-            personIdContractNumberRequestBody(meta, req)
-        }
-        logRequest(requestBody)
-        buildBaseRequest(meta.correlationId)
-          .withBody(requestBody)
-          .withHandler(responseHandler(request, Some(meta), request.requestType, meta.searchType.reqString))
-      case req: Big5MemPERequest =>
-        val requestBody: String = neoEncryptionService match {
-          case Some(encryptionService) =>
-            encryptPayload(big5RequestBody(meta, req), encryptionService)
-          case _ =>
-            big5RequestBody(meta, req)
-        }
-        logRequest(requestBody)
-        buildBaseRequest(meta.correlationId)
-          .withBody(requestBody)
-          .withHandler(responseHandler(request, Some(meta), request.requestType, meta.searchType.reqString))
+          .withHandler(responseHandler(request, Some(meta)))
+
     }
   }
 
-  def buildBaseRequest(corrId: Option[String])(implicit token: Option[OptumAccessTokenResponse]): RqRequest = {
+  def buildBaseRequest(corrId: Option[String])(implicit token: Option[CentriAccessTokenResponse]): RqRequest = {
     val correlationId = corrId match {
       case Some(correlationId) => correlationId
       case _ => CorrelationId.extractCorrelationIdAsString()
@@ -107,22 +85,19 @@ class WSIhrClient(ihrConfig: IhrConfig,
       .withHeaders(
         (Authorization, s"Bearer ${tokenString}"),
         (Timestamp, s"${DateTimeHelpers.now.getMillis}"),
-        (Scope, s"${optumConfig.scope}"),
-        (Actor, s"${optumConfig.actor}"),
+        (Scope, s"${ihrConfig.scope}"),
+        (Actor, s"${ihrConfig.actor}"),
         (ContentType, ContentTypeJson),
         (OptumCorelationId, correlationId),
         (CorrelationId.HeaderName, correlationId)
       )
-      .withRequestTimeout(optumConfig.requestTimeout)
+      .withRequestTimeout(ihrConfig.requestTimeout)
   }
 
-  def responseHandler(
-                       request: LoggableRequest,
-                       meta: Option[OptumRequestMetaData],
-                       requestType: RequestType,
-                       searchType: String,
+  def responseHandler(request: LoggableRequest,
+                       meta: Option[RequestMetaData],
                        startedAt: Long = Instant.now().toEpochMilli
-                     ): ResponseHandler[Either[BaseOptumResponseError, OptumResponseSuccess]] = {
+                     ): ResponseHandler[Either[BaseCentriResponseError, CentriResponseSuccess]] = {
 
     case response: RqResponse =>
       val rsp: RqResponse = neoEncryptionService match {
@@ -134,33 +109,33 @@ class WSIhrClient(ihrConfig: IhrConfig,
       rsp match {
         case rsp if rsp.status == 200 && !hasError(rsp) =>
           val responseJson = rsp.body.as[JsValue]
-          val response = OptumResponseSuccess(rsp.status, rsp.headers, responseJson)
+          val response = CentriResponseSuccess(rsp.status, rsp.headers, responseJson)
           secureLogger.secureInfo("Optum MemPE Success Response", response)
-          emitSuccessStats(requestType, searchType, rsp, startedAt)
+          emitSuccessStats(rsp, startedAt)
           Right(response)
 
         case rsp if isJson(rsp.body.string) && hasError(rsp) =>
           val responseJson = rsp.body.as[JsValue]
           val errorCode = (responseJson \ ErrorCode2).asOpt[String]
             .getOrElse((responseJson \\ ErrorCode1).head.as[String])
-          val errorResponse = OptumResponseAppError(rsp.status, rsp.headers, errorCode, responseJson)
+          val errorResponse = CentriResponseAppError(rsp.status, rsp.headers, errorCode, responseJson)
           secureLogger.secureError(errorResponse.getMessage, Seq(meta, request, responseJson))
-          emitErrorStats(requestType, searchType, rsp, startedAt)
+          emitErrorStats(rsp, startedAt)
           Left(errorResponse)
 
         case rsp =>
-          val errorResponse = OptumResponseError(rsp.status, rsp.headers, Some(rsp.body.string))
+          val errorResponse = CentriResponseError(rsp.status, rsp.headers, Some(rsp.body.string))
           secureLogger.secureError(errorResponse.getMessage, Seq(meta, request, rsp.body.string))
-          emitErrorStats(requestType, searchType, rsp, startedAt)
+          emitErrorStats(rsp, startedAt)
           Left(errorResponse)
       }
   }
 
-  def emitErrorStats(requestType: RequestType, searchType: String, rsp: RqResponse, startedAt: Long): Unit =
-    emitErrorStatsWithTiming(Seq(requestType.toStatString, searchType), rsp, startedAt)
+  def emitErrorStats(rsp: RqResponse, startedAt: Long): Unit =
+    emitErrorStatsWithTiming(rsp, startedAt)
 
-  def emitSuccessStats(requestType: RequestType, searchType: String, rsp: RqResponse, startedAt: Long): Unit =
-    emitSuccessStatsWithTiming(Seq(requestType.toStatString, searchType), rsp, startedAt)
+  def emitSuccessStats(rsp: RqResponse, startedAt: Long): Unit =
+    emitSuccessStatsWithTiming(rsp, startedAt)
 
   def logRequest(requestBody: String): Unit = {
     secureLogger.secureInfo(s"Calling Optum MemPE endpoint (${CorrelationId.extractCorrelationIdAsString()}})", requestBody)
@@ -168,13 +143,13 @@ class WSIhrClient(ihrConfig: IhrConfig,
 
   private def encryptPayload(payload: String, encryptionService: NeoEncryptionService): String = {
     val encrypted: String = encryptionService.encryptString(payload)
-    Json.toJson(Map(optumConfig.encryptedPayloadKey -> encrypted)).toString
+    Json.toJson(Map(ihrConfig.encryptedPayloadKey -> encrypted)).toString
   }
 
   private def decryptPayload(response: RqResponse, encryptionService: NeoEncryptionService): RqResponse = {
     val status: Int = response.status
     val headers: Map[String, Seq[String]] = response.headers
-    val encryptedPayload: JsLookupResult = response.body.as[JsValue] \ optumConfig.encryptedPayloadKey
+    val encryptedPayload: JsLookupResult = response.body.as[JsValue] \ ihrConfig.encryptedPayloadKey
     val decrypted: String = encryptionService.decryptString(encryptedPayload.getOrElse(
       throw new IllegalArgumentException("Empty JSON Payload")).as[String])
     val jsonPayload = Json.parse(decrypted)

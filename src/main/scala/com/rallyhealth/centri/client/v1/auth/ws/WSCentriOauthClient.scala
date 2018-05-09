@@ -18,6 +18,7 @@ import scala.util.control.NonFatal
   * @see [[OAuthClient]]
   */
 class WSCentriOauthClient(
+
                           centriConfig: CentriClientConfig,
                           tokenRequest: CentriAccessTokenRequest,
                           wsClient: RqClient
@@ -66,3 +67,5 @@ class WSCentriOauthClient(
       .withRequestTimeout(centriConfig.requestTimeout)
   }
 }
+
+

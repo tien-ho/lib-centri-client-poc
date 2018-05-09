@@ -1,8 +1,8 @@
 package com.rallyhealth.centri.client.v1.ihr
 
 import com.rallyhealth.centri.client.v1.common.model.{BaseCentriResponseError, CentriResponseSuccess}
-import com.rallyhealth.centri.client.v1.ihr.model.{OptumMemPERequest, OptumRequestMetaData}
-import com.rallyhealth.centri.client.v1.ihr.ws.MemPERequestBodyBuilder.MemberProductEligibilityRequest
+import com.rallyhealth.centri.client.v1.ihr.model.{CentriIhrRequest, RequestMetaData}
+
 
 import scala.concurrent.{ExecutionContext, Future}
 
@@ -19,22 +19,11 @@ trait WithOAuthIhrClient {
     *
     * @param request The MemPE API request
     * @param meta Meta data needed to call Optum API
-    * @return Either [[BaseOptumResponseError]] or [[OptumResponseSuccess]]
+    * @return Either [[BaseCentriResponseError]] or [[CentriResponseSuccess]]
     */
-  def findMemberProductEligibility(
-                                    request: OptumMemPERequest,
-                                    meta: OptumRequestMetaData
-                                  )(implicit ec: ExecutionContext): Future[Either[BaseOptumResponseError, OptumResponseSuccess]]
+  def findIhrHealthCheck(request: CentriIhrRequest,
+                            meta: RequestMetaData
+                           )(implicit ec: ExecutionContext): Future[Either[BaseCentriResponseError, CentriResponseSuccess]]
 
-  /**
-    * Finds member product eligibility with given requested parameters
-    *
-    * @param request The MemberProductEligibilityRequest
-    * @param correlationId The correlationId to pass through to Optum
-    * @return Either [[BaseOptumResponseError]] or [[OptumResponseSuccess]]
-    */
-  def findByMemberProductEligibilityRequest(
-                                             request: MemberProductEligibilityRequest,
-                                             correlationId: Option[String]
-                                           )(implicit ec: ExecutionContext): Future[Either[BaseOptumResponseError, OptumResponseSuccess]]
+
 }

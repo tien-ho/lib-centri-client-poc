@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-centri-client-poc-lib-optum-mempe-play25-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-centri-client-poc-lib-optum-mempe-play25-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-optum-mempe-play25.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-optum-mempe-play25.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-optum-mempe-play25-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-optum-mempe-play25-build.iml" />
     </modules>

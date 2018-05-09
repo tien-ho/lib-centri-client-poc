@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="aa818234-f8bb-48ee-9730-ec8a2241b2c3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$09584cab33abb290b971$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$09584cab33abb290b971.cache" beforeDir="false" />
@@ -68,6 +69,9 @@
       <change beforePath="$PROJECT_DIR$/project/target/config-classes/$febbb4ec195b784a5917$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/config-classes/$febbb4ec195b784a5917.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/config-classes/$febbb4ec195b784a5917.class" beforeDir="false" />
+=======
+    <list default="true" id="fdf9cda5-9140-4767-a17b-e3c99f423712" name="Default" comment="">
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/lib-centri-client-poc-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/lib-centri-client-poc-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/lib-centri-client-poc-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/lib-centri-client-poc-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-lib-centri-client-poc-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-lib-centri-client-poc-build-compile-internal.xml" afterDir="false" />
@@ -84,6 +88,7 @@
       <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-lib-centri-client-poc-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-lib-centri-client-poc-build-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-lib-centri-client-poc-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-lib-centri-client-poc-build-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
@@ -115,6 +120,15 @@
       <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/com.rallyhealth.optum/lib-optum-mempe-play25-v8_2.11/8.0.0-1-d2c2c39-dirty-SNAPSHOT/resolved.xml.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/com.rallyhealth.optum/lib-optum-mempe-play25-v8_2.11/8.0.0-1-d2c2c39-dirty-SNAPSHOT/resolved.xml.xml" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/CachedCentriOauthClient.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/CachedCentriOauthClient.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/WSCentriOauthClient.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/WSCentriOauthClient.scala" afterDir="false" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-compile-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-compile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-docs.xml" afterDir="false" />
@@ -130,6 +144,7 @@
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-sources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/com.rallyhealth.optum-lib-optum-mempe-play25-v8_2.11-test.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/rallyhealth/centri/client/v1/auth/OAuthClient.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/rallyhealth/centri/client/v1/auth/model/CentriAccessTokenRequest$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/rallyhealth/centri/client/v1/auth/model/CentriAccessTokenRequest.class" beforeDir="false" />
@@ -397,6 +412,13 @@
       <change beforePath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterDir="false" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -415,6 +437,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="IhrRequestBodyBuilder.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/ws/IhrRequestBodyBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -443,11 +466,21 @@
               <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
               <folding>
                 <element signature="e#49#73#0" expanded="true" />
+=======
+      <file leaf-file-name="CachedCentriOauthClient.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/CachedCentriOauthClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+              <folding>
+                <element signature="e#50#119#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="WSMemberProductEligibilityClient.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/member/ws/WSMemberProductEligibilityClient.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -455,11 +488,21 @@
               <caret line="78" column="46" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="46" />
               <folding>
                 <element signature="e#51#75#0" expanded="true" />
+=======
+      <file leaf-file-name="WSOptumOauthClient.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/auth/ws/WSOptumOauthClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+              <folding>
+                <element signature="e#49#122#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MemPERequestBodyBuilder.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/member/ws/MemPERequestBodyBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -467,11 +510,21 @@
               <caret line="32" column="40" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="40" />
               <folding>
                 <element signature="e#51#104#0" expanded="true" />
+=======
+      <file leaf-file-name="WSCentriOauthClient.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/WSCentriOauthClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+              <folding>
+                <element signature="e#50#123#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MemberProductEligibilityClient.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/member/MemberProductEligibilityClient.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -479,11 +532,21 @@
               <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
               <folding>
                 <element signature="e#48#122#0" expanded="true" />
+=======
+      <file leaf-file-name="CachedOptumOauthClient.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/auth/ws/CachedOptumOauthClient.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding>
+                <element signature="e#49#118#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="OptumMemPERequest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/member/model/OptumMemPERequest.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -525,6 +588,10 @@
       <find>Big5MemPERequest</find>
     </findStrings>
   </component>
+=======
+    </leaf>
+  </component>
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -533,6 +600,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/CachedCentriOauthClient.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/WSCentriOauthClient.scala" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/config/config/ConfigIntakeConfig.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/config/ws/WSConfigIntakeClient.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/config/ConfigIntakeClient.scala" />
@@ -546,6 +614,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/model/IhrRequest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/model/CentriIhrRequest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/ws/IhrRequestBodyBuilder.scala" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       </list>
     </option>
   </component>
@@ -559,6 +629,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="10" />
     <option name="y" value="28" />
     <option name="width" value="1404" />
@@ -566,13 +637,22 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+=======
+    <option name="x" value="34" />
+    <option name="y" value="92" />
+    <option name="width" value="1380" />
+    <option name="height" value="757" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -589,6 +669,7 @@
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="lib-centri-client-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -597,23 +678,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="it" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="lib-centri-client-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="it" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="lib-centri-client-poc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -621,9 +713,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -632,9 +727,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -644,7 +742,10 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="ihr" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -654,8 +755,12 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="ihr" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -665,7 +770,11 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="ihr" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -676,7 +785,11 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="ihr" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               <item name="ws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -696,6 +809,7 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v8" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="member" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -719,6 +833,9 @@
               <item name="v8" type="462c0819:PsiDirectoryNode" />
               <item name="member" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
             </path>
             <path>
               <item name="lib-centri-client-poc" type="b2602c69:ProjectViewProjectNode" />
@@ -728,14 +845,22 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="rallyhealth" type="462c0819:PsiDirectoryNode" />
               <item name="v8" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="member" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
               <item name="ws" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="AndroidView" />
+=======
+      <pane id="Scope" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -745,10 +870,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -782,12 +910,15 @@
       </option>
       <patterns />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
       <module name="lib-optum-mempe-play25" />
       <setting name="vmparams4" value="-Djline.terminal=NONE" />
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <setting name="consoleArgs" value="-usejavacp" />
     </configuration>
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -810,11 +941,14 @@
       <properties />
       <listeners />
     </configuration>
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="Scala Console.Scala Console" />
       </list>
     </recent_temporary>
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
   </component>
   <component name="SbtLocalSettings">
     <option name="availableProjects">
@@ -843,7 +977,10 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="6101937772000" />
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
         <entry key="$PROJECT_DIR$/build.sbt" value="17240001" />
         <entry key="$PROJECT_DIR$/project/Dependencies.scala" value="2246448803" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1198701921" />
@@ -852,6 +989,7 @@
     </option>
     <option name="projectSyncType">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$/../../bartleby_project/bartleby" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../bartleby_project/rally-docker-sbt-plugin" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../bartleby_project/rally-versioning" value="PREVIEW" />
@@ -864,6 +1002,10 @@
         <entry key="$PROJECT_DIR$/../rally-sbt-plugin" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../rally-versioning" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../scalacheck-ops" value="PREVIEW" />
+=======
+        <entry key="$PROJECT_DIR$/../dataship" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../lib-centri-client" value="PREVIEW" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       </map>
     </option>
   </component>
@@ -872,16 +1014,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="aa818234-f8bb-48ee-9730-ec8a2241b2c3" name="Default" comment="" />
       <created>1525718709591</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525718709591</updated>
       <workItem from="1525718713716" duration="11187000" />
+=======
+      <changelist id="fdf9cda5-9140-4767-a17b-e3c99f423712" name="Default" comment="" />
+      <created>1525484763834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525484763834</updated>
+      <workItem from="1525484770592" duration="940000" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="11187000" />
   </component>
   <component name="ToolWindowManager">
@@ -917,6 +1069,38 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+=======
+    <option name="totallyTimeSpent" value="940000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="34" y="92" width="1380" height="757" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="sbt" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" weight="0.32973805" />
+      <window_info anchor="bottom" id="Build" weight="0.32973805" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Learn" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -928,6 +1112,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/model/CentriAccessTokenResponse.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84" />
@@ -1247,10 +1432,64 @@
           <caret line="35" column="64" lean-forward="true" selection-start-line="1" selection-end-line="35" selection-end-column="64" />
           <folding>
             <element signature="e#53#82#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/it/scala/com/rallyhealth/optum/client/script/ProductEligibilitySpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/scala/com/rallyhealth/optum/client/script/InvokeOptumSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/scala/com/rallyhealth/optum/client/script/InvokeConfigIntakeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/scala/com/rallyhealth/optum/client/script/AuthClientSetup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/model/CentriAccessTokenResponse.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/model/CentriAccessTokenRequest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/OAuthClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/auth/ws/CachedOptumOauthClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#49#118#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/config/IhrConfig.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1264,30 +1503,57 @@
           <caret line="122" column="24" lean-forward="true" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
           <folding>
             <element signature="e#54#83#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/CachedCentriOauthClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="e#50#119#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/model/CentriIhrRequest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
           <folding>
             <element signature="e#54#83#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/auth/ws/WSOptumOauthClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="e#49#122#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/optum/client/v8/member/ws/MemPERequestBodyBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="40" />
           <folding>
             <element signature="e#51#104#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/auth/ws/WSCentriOauthClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+          <folding>
+            <element signature="e#50#123#0" expanded="true" />
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/rallyhealth/centri/client/v1/ihr/ws/IhrRequestBodyBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1310,5 +1576,7 @@
         </settings>
       </state>
     </states>
+=======
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
   </component>
 </project>

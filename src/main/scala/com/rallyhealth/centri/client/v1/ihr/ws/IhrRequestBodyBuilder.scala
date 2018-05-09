@@ -21,39 +21,28 @@ object IhrRequestBodyBuilder {
   }
 
 
-  case class IhrRequest(test: String,
-                       correlationId: String
-                       ) extends LoggableRequest
-
+  case class IhrRequest(applicationName: String,
+                                   message: String) extends LoggableRequest
   object IhrRequest {
     implicit val format: Format[IhrRequest] = Json.format[IhrRequest]
   }
 
 
-  /**
-    * Builds the health check request and returns a JSON representation
-    */
-  def healthCheckRequestBody(ihrRequest: IhrRequest): String = Json.toJson(
+
+  def healthCheckRequestBody(request: IhrHealthCheckRequest, meta: RequestMetaData): String = Json.toJson(
     {
-      ihrRequest
-    }
-  ).toString()
-
-
-  def healthCheckRequestBody(meta: RequestMetaData, ihrRequest: IhrRequest): String = Json.toJson(
-    {
-      val baseRequest = buildBaseIhrMessageBuilder(meta, ihrRequest)
-
+      val baseRequest = buildBaseIhrMessageBuilder(request, meta)
+      baseRequest.copy()
     }
   ).toString()
 
 
 
 
-  private def buildBaseIhrMessageBuilder(meta: RequestMetaData, ihrRequest: IhrRequest): IhrMessageBuilder =
+  private def buildBaseIhrMessageBuilder(request: IhrHealthCheckRequest, meta: RequestMetaData): IhrMessageBuilder =
     IhrMessageBuilder(IhrRequest(
-        "testing",
-      meta.correlationId.get
+      meta.applicationName,
+      request.test
     ))
 
 

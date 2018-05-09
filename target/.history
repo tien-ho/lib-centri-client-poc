@@ -3,6 +3,30 @@ compile
 exit
 clean
 compile
+<<<<<<< HEAD
 exit
 clean
 compile
+=======
+clean
+compile
+clean
+>>>>>>> 5529e1ce78bd445cc9cd17eda668484f3c53a1e3
+clean
+compile
+ls
+clean
+compile
+clean
+compile
+exit
+clean
+compile
+clean
+compile
+clean
+compile
+clean
+compile
+clean
+exit

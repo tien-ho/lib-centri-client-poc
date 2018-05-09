@@ -31,16 +31,16 @@ trait StatsHelper {
     def emitTiming(path: Seq[String], start: Long) =
         statTiming(stringify(statPath ++ path ++ Seq("receive")), (Instant.now().toEpochMilli - start).toInt)
 
-    def emitErrorStatsWithTiming(path: Seq[String], rsp: RqResponse, startedAt: Long): Unit = {
-        emitTiming(path, startedAt)
+    def emitErrorStatsWithTiming(rsp: RqResponse, startedAt: Long): Unit = {
+
         emitError(rsp.status)
-        emitError(path, rsp.status)
+
     }
 
-    def emitSuccessStatsWithTiming(path: Seq[String], rsp: RqResponse, startedAt: Long): Unit = {
-        emitTiming(path, startedAt)
+    def emitSuccessStatsWithTiming(rsp: RqResponse, startedAt: Long): Unit = {
+
         emitSuccess(rsp.status)
-        emitSuccess(path, rsp.status)
+
     }
 
     private def combine(path: Seq[String], `type`: StatType): Seq[String] = {

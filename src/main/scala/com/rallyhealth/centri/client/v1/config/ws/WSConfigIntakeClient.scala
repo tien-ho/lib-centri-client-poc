@@ -91,10 +91,10 @@ class WSConfigIntakeClient(
   }
 
   def emitErrorStats(rsp: RqResponse, startedAt: Long): Unit =
-    emitErrorStatsWithTiming(statPath, rsp, startedAt)
+    emitErrorStatsWithTiming(rsp, startedAt)
 
   def emitSuccessStats(rsp: RqResponse, startedAt: Long): Unit =
-    emitSuccessStatsWithTiming(statPath, rsp, startedAt)
+    emitSuccessStatsWithTiming(rsp, startedAt)
 
   def logRequest(requestBody: String): Unit = {
     secureLogger.secureInfo(s"Calling Optum Config-Intake endpoint, corId=${CorrelationId.extractCorrelationIdAsString()}", requestBody)

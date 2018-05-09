@@ -21,8 +21,7 @@ sealed trait CentriIhrRequest extends LoggableRequest {
   *
   * @param test
   */
-case class IhrHealthCheckRequest(
-                                  test: String,
+case class IhrHealthCheckRequest(test: String,
                                   correlationId: String
                                 ) extends CentriIhrRequest {
 }
