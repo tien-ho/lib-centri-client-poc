@@ -1,0 +1,2 @@
+[0m[[0minfo[0m] [0m[SemVer] Checking ENABLED with LIMIT target semVerVersionLimit=8.999.999[0m
+[0m[[0minfo[0m] [0m[SemVer] Check aborted: no previous release -- nothing to compare for SemVer violations[0m

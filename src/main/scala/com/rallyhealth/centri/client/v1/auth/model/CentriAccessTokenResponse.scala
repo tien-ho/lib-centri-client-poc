@@ -1,11 +1,7 @@
 package com.rallyhealth.centri.client.v1.auth.model
 
-import com.rallyhealth.centri.client.v1.common.ApiConstant
-import ApiConstant._
-import com.rallyhealth.centri.client.v1.common.model.BaseCentriResponseError
 import com.rallyhealth.spartan.v2.datetime.DateTimeHelpers
 import org.joda.time.DateTime
-import play.api.libs.functional.syntax._
 import play.api.libs.json._
 
 /**

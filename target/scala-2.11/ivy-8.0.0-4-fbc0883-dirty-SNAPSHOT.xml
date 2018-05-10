@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="com.rallyhealth.optum" module="lib-optum-mempe-play25-v8_2.11" revision="8.0.0-4-fbc0883-dirty-SNAPSHOT" status="integration" publication="20180509145038">
+		<description>
+		lib-optum-mempe-play25-v8
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="it" visibility="public" description="" extends="test"/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+		
+	</configurations>
+	<publications>
+		<artifact name="lib-optum-mempe-play25-v8_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="lib-optum-mempe-play25-v8_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.11" conf="compile->default(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.11" rev="3.5.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.core" name="lib-carestats-core-v4_2.11" rev="4.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.core" name="lib-enigma-play25-v4_2.11" rev="4.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.rq" name="lib-rq-client-api-v1_2.11" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.rq" name="lib-rq-client-builder-v1_2.11" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.rq" name="lib-rq-client-logging-v1_2.11" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.rq" name="lib-rq-client-play25-v1_2.11" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth.core" name="lib-spartan-play25-json-v2_2.11" rev="2.4.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.5.13" conf="compile->default(compile)"/>
+		<dependency org="org.mockito" name="mockito-all" rev="1.10.19" conf="test->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="3.0.1" conf="test->default(compile)"/>
+		<dependency org="com.rallyhealth.rq" name="lib-rq-client-testkit-v1_2.11" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.rallyhealth" name="scalacheck-ops_2.11" rev="1.5.0" conf="test->default(compile)"/>
+	</dependencies>
+</ivy-module>

@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m:: delivering :: com.rallyhealth.optum#lib-optum-mempe-play25-v8_2.11;8.0.0-4-fbc0883-dirty-SNAPSHOT :: 8.0.0-4-fbc0883-dirty-SNAPSHOT :: integration :: Wed May 09 14:50:38 PDT 2018[0m
+[0m[[0mdebug[0m] [0m	options = status=integration pubdate=Wed May 09 14:50:38 PDT 2018 validate=true resolveDynamicRevisions=true merge=true resolveId=null pubBranch=null[0m
+[0m[[0minfo[0m] [0m	delivering ivy file to /home/tho-optum/WorkArea/dev/rally_projects/lib-centri-client-poc/target/scala-2.11/ivy-8.0.0-4-fbc0883-dirty-SNAPSHOT.xml[0m
+[0m[[0mdebug[0m] [0m	deliver done (15ms)[0m

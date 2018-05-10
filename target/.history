@@ -30,3 +30,15 @@ clean
 compile
 clean
 exit
+compile
+exit
+clean
+compile
+clean
+compile
+clan
+clean
+compile
+package
+publish-local
+exit

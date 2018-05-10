@@ -4,7 +4,7 @@
 		module="lib-centri-client-poc-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180509112005"
+		publication="20180509144954"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
